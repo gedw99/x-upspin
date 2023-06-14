@@ -10,7 +10,7 @@ bin:
 bin-del:
 	rm -rf $(BIN_FSPATH)
 
-all: dep-1 dep-2 dep-3
+dep-all: dep-1 dep-2 dep-3
 
 dep-1: bin
 
@@ -95,7 +95,8 @@ dep-3: bin
 
 dep-tree:
 	tree $(BIN_FSPATH)
-conf:
+
+conf-tree:
 	tree $(CONFIG_FSPATH)
 
 start:

@@ -2,22 +2,26 @@
 
 playground for quick prototyping of https://github.com/upspin 
 
-1. install golang
-
-https://github.com/kevincobain2000/gobrew
+1. install golang using https://github.com/kevincobain2000/gobrew
 
 ```
 curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
 ```
 
-2. install the upsin and exp binaries 
+2. install the Upspin binaries in project fooders locally like Nix os does.
 ```
 
-make all
+make dep-all
 
 ```
 
-3. ....
+3. Boot it up
+
+```
+make start
+```
+
+4. ....
 
 https://m3.material.io/ binding ...
 
