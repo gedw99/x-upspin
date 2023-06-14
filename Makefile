@@ -1,16 +1,18 @@
-MAKE_FSPATH=$(SC_MAKE_FSPATH)
-include $(MAKE_FSPATH)/help.mk
+## MAKE
 
+# MAKE_FSPATH=$(SC_MAKE_FSPATH)
+# include $(MAKE_FSPATH)/help.mk
 
-include $(MAKE_FSPATH)/aqua.mk
-AQUA_SRC_BIN_FSPATH=$(BIN_FSPATH)
+# include $(MAKE_FSPATH)/aqua.mk
+# AQUA_SRC_BIN_FSPATH=$(BIN_FSPATH)
 
-include $(MAKE_FSPATH)/nats.mk
-NATS_SRC_BIN_FSPATH=$(BIN_FSPATH)
+# include $(MAKE_FSPATH)/nats.mk
+# NATS_SRC_BIN_FSPATH=$(BIN_FSPATH)
 
-include $(MAKE_FSPATH)/minio.mk
-MINIO_BIN_FSPATH=$(BIN_FSPATH)
+# include $(MAKE_FSPATH)/minio.mk
+# MINIO_BIN_FSPATH=$(BIN_FSPATH)
 
+### BIN
 
 BIN_FSPATH=$(PWD)/.bin
 export PATH:=$(BIN_FSPATH):$(PATH)
