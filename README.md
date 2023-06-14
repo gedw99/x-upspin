@@ -6,7 +6,7 @@ It can also be used to bootstrap Upsin itself.
 
 We assume you have make installed.
 
-## 1. install golang
+## 1. Install golang (optional)
 
 Using https://github.com/kevincobain2000/gobrew
 
@@ -74,9 +74,9 @@ Downloading 100% |████████████████████�
 ==> [Success] Changed go version to: 1.20.5
 ```
 
-## 2. install the Upspin 
+## 2. Install the Upspin binaries
 
-Wil install the binaries in your local .bin folder.
+We install the binaries in your local git repository .bin folder.
 
 ```
 
@@ -141,7 +141,9 @@ go install exp.upspin.io/cmd/upsync@latest && mv /Users/apple/go/bin/upsync /Use
 
 ```
 
-## 3. Boot it all up.
+## 3. Boot it all up
+
+This will run all the Upspin binaries at once using the ProcFile.
 
 ```
 make start-all

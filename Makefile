@@ -26,7 +26,6 @@ dep-1: bin
 	# https://github.com/a8m/tree
 	go install github.com/a8m/tree/cmd/tree@latest && mv $(GOPATH)/bin/tree $(BIN_FSPATH)
 
-
 	# https://github.com/n2vi/lsr
 	go install github.com/n2vi/lsr@latest && mv $(GOPATH)/bin/lsr $(BIN_FSPATH)
 
@@ -98,14 +97,16 @@ dep-3: bin
 	# https://github.com/upspin/exp/tree/master/cmd/upsync
 	go install exp.upspin.io/cmd/upsync@latest && mv $(GOPATH)/bin/upsync $(BIN_FSPATH)
 
-start-all:
-	goreman start
 
 dep-tree:
 	tree $(BIN_FSPATH)
 
 conf-tree:
 	tree $(CONFIG_FSPATH)
+	
+start-all:
+	goreman start
+
 
 lsr:
 	lsr
