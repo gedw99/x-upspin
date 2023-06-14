@@ -82,9 +82,66 @@ Wil install the binaries in your local .bin folder.
 
 make dep-all
 
+mkdir -p /Users/apple/workspace/go/src/github.com/gedw99/x-upsin/.bin
+# OS level
+# https://github.com/mattn/goreman
+go install github.com/mattn/goreman@latest && mv /Users/apple/go/bin/goreman /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/hashicorp/go-getter
+go install github.com/hashicorp/go-getter/cmd/go-getter@v1.7.1 && mv /Users/apple/go/bin/go-getter /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/a8m/tree
+go install github.com/a8m/tree/cmd/tree@latest && mv /Users/apple/go/bin/tree /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/n2vi/lsr
+go install github.com/n2vi/lsr@latest && mv /Users/apple/go/bin/lsr /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+### UPSPIN
+# https://github.com/upspin/upspin/tree/master/cmd/cacheserver
+go install upspin.io/cmd/cacheserver@latest && mv /Users/apple/go/bin/cacheserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/dirserver
+go install upspin.io/cmd/dirserver@latest && mv /Users/apple/go/bin/dirserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/frontend
+go install upspin.io/cmd/frontend@latest && mv /Users/apple/go/bin/frontend /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/keyserver
+go install upspin.io/cmd/keyserver@latest && mv /Users/apple/go/bin/keyserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/storeserver
+go install upspin.io/cmd/storeserver@latest && mv /Users/apple/go/bin/storeserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upbox
+go install upspin.io/cmd/upbox@latest && mv /Users/apple/go/bin/upbox /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upspin-audit
+go install upspin.io/cmd/upspin-audit@latest && mv /Users/apple/go/bin/upspin-audit /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upspin-setupstorage
+go install upspin.io/cmd/upspin-setupstorage@latest && mv /Users/apple/go/bin/upspin-setupstorage /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upspin
+go install upspin.io/cmd/upspin@latest && mv /Users/apple/go/bin/upspin /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upspinfs
+go install upspin.io/cmd/upspinfs@latest && mv /Users/apple/go/bin/upspinfs /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/upspin/tree/master/cmd/upspinserver
+go install upspin.io/cmd/upspinserver@latest && mv /Users/apple/go/bin/upspinserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+### EXP 
+# https://github.com/upspin/exp/tree/master/cmd/camclient
+go install exp.upspin.io/cmd/camclient@latest && mv /Users/apple/go/bin/camclient /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/exp/tree/master/cmd/camserver
+go install exp.upspin.io/cmd/camserver@latest && mv /Users/apple/go/bin/camserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/exp/tree/master/cmd/demoserver
+go install exp.upspin.io/cmd/demoserver@latest && mv /Users/apple/go/bin/demoserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+go-getter github.com/upspin/exp.git//cmd/demoserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin//templates/demoserver
+2023/06/14 12:29:33 success!
+# https://github.com/upspin/exp/tree/master/cmd/fileserver
+go install exp.upspin.io/cmd/fileserver@latest && mv /Users/apple/go/bin/fileserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+go-getter github.com/upspin/exp.git//cmd/fileserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin//templates/fileserver
+2023/06/14 12:29:38 success!
+# https://github.com/upspin/exp/tree/master/cmd/issueserver
+go install exp.upspin.io/cmd/issueserver@latest && mv /Users/apple/go/bin/issueserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+go-getter github.com/upspin/exp.git//cmd/issueserver /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin//templates/issueserver
+2023/06/14 12:29:48 success!
+# https://github.com/upspin/exp/tree/master/cmd/upspin-sharebot
+go install exp.upspin.io/cmd/upspin-sharebot@latest && mv /Users/apple/go/bin/upspin-sharebot /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/exp/tree/master/cmd/upspin-warden
+go install exp.upspin.io/cmd/upspin-warden@latest && mv /Users/apple/go/bin/upspin-warden /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+# https://github.com/upspin/exp/tree/master/cmd/upsync
+go install exp.upspin.io/cmd/upsync@latest && mv /Users/apple/go/bin/upsync /Users/apple/workspace/go/src/github.com/gedw99/x-upspin/.bin/
+
 ```
 
-3. Boot it all up.
+## 3. Boot it all up.
 
 ```
 make start-all
