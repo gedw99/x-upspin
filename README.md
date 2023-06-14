@@ -6,7 +6,9 @@ It can also be used to bootstrap Upsin itself.
 
 We assume you have make installed.
 
-1. install golang using https://github.com/kevincobain2000/gobrew
+## 1. install golang
+
+Using https://github.com/kevincobain2000/gobrew
 
 ```
 curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
@@ -72,7 +74,10 @@ Downloading 100% |████████████████████�
 ==> [Success] Changed go version to: 1.20.5
 ```
 
-2. install the Upspin binaries in your local .bin folder.
+## 2. install the Upspin 
+
+Wil install the binaries in your local .bin folder.
+
 ```
 
 make dep-all

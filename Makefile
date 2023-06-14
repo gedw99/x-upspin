@@ -26,8 +26,6 @@ dep-1: bin
 	# https://github.com/a8m/tree
 	go install github.com/a8m/tree/cmd/tree@latest && mv $(GOPATH)/bin/tree $(BIN_FSPATH)
 
-	# https://github.com/a8m/s3tree
-	go install github.com/a8m/s3tree@latest && mv $(GOPATH)/bin/s3tree $(BIN_FSPATH)
 
 	# https://github.com/n2vi/lsr
 	go install github.com/n2vi/lsr@latest && mv $(GOPATH)/bin/lsr $(BIN_FSPATH)
