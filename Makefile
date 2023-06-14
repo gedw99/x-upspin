@@ -99,7 +99,7 @@ dep-tree:
 conf-tree:
 	tree $(CONFIG_FSPATH)
 
-start:
+start-all:
 	goreman start
 
 lsr:

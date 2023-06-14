@@ -8,23 +8,22 @@ playground for quick prototyping of https://github.com/upspin
 curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
 ```
 
-2. install the Upspin binaries in project fooders locally like Nix os does.
+2. install the Upspin binaries in .bin folder locally.
 ```
 
 make dep-all
 
 ```
 
-3. Boot it up
+3. Boot it all up.
 
 ```
-make start
+make start-all
 ```
 
-4. ....
+4. TODO: Bind it to a GUI.
 
-https://m3.material.io/ binding ...
-
+- https://m3.material.io/ binding ...
 - doc: https://m3.material.io/develop/web
 - code: https://github.com/material-components/material-web#readme
   - looks lik they are serious this time.
