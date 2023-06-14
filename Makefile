@@ -10,7 +10,7 @@ bin:
 bin-del:
 	rm -rf $(BIN_FSPATH)
 
-dep-all: dep-1 dep-2 dep-3
+all: dep-1 dep-2 dep-3
 
 dep-1: bin
 
@@ -93,15 +93,13 @@ dep-3: bin
 	# https://github.com/upspin/exp/tree/master/cmd/upsync
 	go install exp.upspin.io/cmd/upsync@latest && mv $(GOPATH)/bin/upsync $(BIN_FSPATH)
 
-
+dep-tree:
+	tree $(BIN_FSPATH)
 conf:
 	tree $(CONFIG_FSPATH)
 
-0:
+start:
 	goreman start
 
-1:
-	cacheserver -h
-	
 lsr:
 	lsr
