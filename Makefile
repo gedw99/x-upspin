@@ -1,3 +1,4 @@
+
 BIN_FSPATH=$(PWD)/.bin
 export PATH:=$(BIN_FSPATH):$(PATH)
 
@@ -14,13 +15,19 @@ dep-all: dep-1 dep-2 dep-3
 
 dep-1: bin
 
-	# OS
+	# OS level
 
 	# https://github.com/mattn/goreman
 	go install github.com/mattn/goreman@latest && mv $(GOPATH)/bin/goreman $(BIN_FSPATH)
 
 	# https://github.com/hashicorp/go-getter
 	go install github.com/hashicorp/go-getter/cmd/go-getter@v1.7.1 && mv $(GOPATH)/bin/go-getter $(BIN_FSPATH)
+
+	# https://github.com/a8m/tree
+	go install github.com/a8m/tree/cmd/tree@latest && mv $(GOPATH)/bin/tree $(BIN_FSPATH)
+
+	# https://github.com/a8m/s3tree
+	go install github.com/a8m/s3tree@latest && mv $(GOPATH)/bin/s3tree $(BIN_FSPATH)
 
 	# https://github.com/n2vi/lsr
 	go install github.com/n2vi/lsr@latest && mv $(GOPATH)/bin/lsr $(BIN_FSPATH)
@@ -93,14 +100,17 @@ dep-3: bin
 	# https://github.com/upspin/exp/tree/master/cmd/upsync
 	go install exp.upspin.io/cmd/upsync@latest && mv $(GOPATH)/bin/upsync $(BIN_FSPATH)
 
+start-all:
+	goreman start
+
 dep-tree:
 	tree $(BIN_FSPATH)
 
 conf-tree:
 	tree $(CONFIG_FSPATH)
 
-start-all:
-	goreman start
-
 lsr:
 	lsr
+
+
+
