@@ -10,7 +10,9 @@ We assume you have make installed.
 
 ```
 curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
+``` 
 
+```
 Installed successfully to: /Users/apple/.gobrew/bin/gobrew
 ============================
 
@@ -50,7 +52,10 @@ Installation Path:
     export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
     export GOROOT="$HOME/.gobrew/current/go"
 
+```
 
+``` 
+gobrew use latest
 ```
 
 2. install the Upspin binaries in your local .bin folder.
