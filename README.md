@@ -10,6 +10,47 @@ We assume you have make installed.
 
 ```
 curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
+
+Installed successfully to: /Users/apple/.gobrew/bin/gobrew
+============================
+
+gobrew 1.8.5
+
+Usage:
+
+    gobrew use <version>           Install and set <version>
+    gobrew ls                      Alias for list
+    gobrew ls-remote               List remote versions (including rc|beta versions)
+
+    gobrew install <version>       Only install <version> (binary from official or GOBREW_REGISTRY env)
+    gobrew uninstall <version>     Uninstall <version>
+    gobrew list                    List installed versions
+    gobrew self-update             Self update this tool
+    gobrew prune                   Uninstall all go versions except current version
+    gobrew version                 Show gobrew version
+    gobrew help                    Show this message
+
+Examples:
+    gobrew use 1.16                # use go version 1.16
+    gobrew use 1.16.1              # use go version 1.16.1
+    gobrew use 1.16rc1             # use go version 1.16rc1
+
+    gobrew use 1.16@latest         # use go version latest of 1.16
+
+    gobrew use 1.16@dev-latest     # use go version latest of 1.16, including rc and beta
+                                   # Note: rc and beta become no longer latest upon major release
+
+    gobrew use mod                 # use go version listed in the go.mod file
+    gobrew use latest              # use go version latest available
+    gobrew use dev-latest          # use go version latest avalable, including rc and beta
+
+Installation Path:
+
+    # Add gobrew to your ~/.bashrc or ~/.zshrc
+    export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"
+    export GOROOT="$HOME/.gobrew/current/go"
+
+
 ```
 
 2. install the Upspin binaries in your local .bin folder.
