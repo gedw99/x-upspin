@@ -1,8 +1,10 @@
 # x-upspin
 
-playground for quick prototyping of https://github.com/upspin 
+This is quick start playground for quick prototyping of https://github.com/upspin.
 
-its assumes you have make.
+It can also be used to bootstrap Upsin itself.
+
+We assume you have make installed.
 
 1. install golang using https://github.com/kevincobain2000/gobrew
 
