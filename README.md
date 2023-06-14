@@ -56,6 +56,20 @@ Installation Path:
 
 ``` 
 gobrew use latest
+==> [Info] Fetching remote versions
+
+==> [Info] Downloading version: 1.20.5 
+==> [Info] Downloading from: https://go.dev/dl/go1.20.5.darwin-amd64.tar.gz 
+==> [Info] Downloading to: /Users/apple/.gobrew/downloads 
+Downloading 100% |███████████████████████████████████████████████████████████| (96/96 MB, 7.0 MB/s)         
+==> [Info] Extracting from: /Users/apple/.gobrew/downloads/go1.20.5.darwin-amd64.tar.gz 
+==> [Info] Extracting to: /Users/apple/.gobrew/versions/1.20.5 
+==> [Success] Untar to /Users/apple/.gobrew/versions/1.20.5
+==> [Success] Downloaded version: 1.20.5
+==> [Info] Fetching remote versions
+
+==> [Info] Changing go version to: 1.20.5 
+==> [Success] Changed go version to: 1.20.5
 ```
 
 2. install the Upspin binaries in your local .bin folder.
