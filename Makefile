@@ -1,3 +1,16 @@
+MAKE_FSPATH=$(SC_MAKE_FSPATH)
+include $(MAKE_FSPATH)/help.mk
+
+
+include $(MAKE_FSPATH)/aqua.mk
+AQUA_SRC_BIN_FSPATH=$(BIN_FSPATH)
+
+include $(MAKE_FSPATH)/nats.mk
+NATS_SRC_BIN_FSPATH=$(BIN_FSPATH)
+
+include $(MAKE_FSPATH)/minio.mk
+MINIO_BIN_FSPATH=$(BIN_FSPATH)
+
 
 BIN_FSPATH=$(PWD)/.bin
 export PATH:=$(BIN_FSPATH):$(PATH)
@@ -11,7 +24,13 @@ bin:
 bin-del:
 	rm -rf $(BIN_FSPATH)
 
-dep-all: dep-1 dep-2 dep-3
+dep-all: dep-0 dep-1 dep-2 dep-3
+
+dep-0: bin
+
+	# Network / shared level
+	$(MAKE) nats-dep
+
 
 dep-1: bin
 
@@ -103,7 +122,7 @@ dep-tree:
 
 conf-tree:
 	tree $(CONFIG_FSPATH)
-	
+
 start-all:
 	goreman start
 

@@ -2,7 +2,7 @@
 
 This is quick start playground for quick prototyping of https://github.com/upspin.
 
-It can also be used to bootstrap Upsin itself.
+It can also be used to bootstrap Upspin itself.
 
 We assume you have make installed.
 
